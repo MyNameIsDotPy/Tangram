@@ -1,58 +1,104 @@
-html, body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1{
+
     padding: 0;
-    font-family: Consolas, serif;
+    margin: 0;
+
+    transform: scale(1);
+    transition: all 1.3s ease;
+
 }
-.fullContainer{
-    display: flex;
-    flex-direction: column;
+
+h1:hover{
+    transform: scale(1.03);
+
 }
+
 .header{
-    vertical-align: middle;
-    justify-content: space-around;
-    background-color: RED;
+
+    flex: 1;
+    color: white;
+    text-shadow: rgba(16, 16, 16, 0.76) 10px 10px 20px;
+
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    justify-content: space-around;
+    text-align: center;
+    border: medium solid ORANGE;
+    padding: 50px 0 50px 0;
+    margin: 1.5em;
+
 }
-.canvas-container{
-    background-color: RED;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50vw;
-    align-self: center;
+
+.header > *{
+
+
+    flex: 1;
+
 }
-main{
-    display: flex;
-    flex-shrink: 1;
-}
+
 li{
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 ul{
-    padding: 10px;
     margin: 0;
+    padding: 0;
 }
-#rules{
+
+body{
+
+    background: linear-gradient(-45deg, #22c1c3, #fdbb2d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto Mono', monospace;
+
+
+
+}
+.container{
+
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+
+
+
 }
-canvas {
+
+#CanvasContainer canvas{
+    margin: 50px 100px 60px 100px;
+    position: relative;
     display: flex;
+    flex: 1;
+    translate: -50% 0;
+    left: 50%;
+    height: auto;
+    border-radius: 1em;
+
+    box-shadow: rgba(72, 72, 72, 0.76) 10px 10px 20px;
 }
 
-#buttons {
-    padding: 20px;
-}
-a{
-    background-color: aliceblue;
-    text-decoration: none;
-
-    padding: 10px;
-    border-radius: 20px;
+button{
+    border-radius: 10px;
     border: none;
+    padding: 10px;
 }

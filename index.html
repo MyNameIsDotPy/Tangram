@@ -4,46 +4,37 @@
     <script src="p5.js"></script>
     <script src="addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="creator.js"></script>
     <meta charset="utf-8" />
 </head>
 <body>
-    <script src="sketch.js"></script>
-    <div class="fullContainer">
-        <div class="header">
+<div class="container">
+    <div class="header">
+
+        <h1>
+            Tangram
+            <br/>
+            by: Andres Alarcon & Daniel
+            <br/>
+            CREATOR MODE
+        </h1>
+        <div>
             <h1>
-                TANGRAM
+                Nivel: <span id="Nivel"> 0 </span>
             </h1>
-            <div id="rules">
-                <ul>
-                    <li>
-                        Regla 1
-                    </li>
-                    <li>
-                        Regla 2
-                    </li>
-                    <li>
-                        Regla 3
-                    </li>
-                    <li>
-                        Regla 4
-                    </li>
-                </ul>
-                <div id="buttons">
-                    <a href="#" onClick="saveSilueta"> Guardar Figura</a>
-                    <a href="#"> Cxºargar siguiente Figura</a>
-                </div>
+            <ul>
+                <li>Seleccionar pieza -- Manener Click izquierdo</li>
+                <li>Rotar pieza -- Flechas izquierda y derecha</li>
+                <li>Reflejar pieza -- Flecha hacia arriba</li>
+                <li>Cambiar eje de rotación -- Flecha hacia abajo</li>
+                <li><button type="button" onclick="saveSilueta()">Guardar Figura</button> <button type="button" onclick="loadNext()"> Cargar siguiente Figura</button></li>
 
-            </div>
-
+            </ul>
         </div>
-        <div class="canvas-container">
-            <main>
 
-            </main>
-            <img src="https://git-scm.com/images/logo@2x.png">
-            <img src="https://git-scm.com/images/logo@2x.png">
-        </div>
     </div>
+    <div id="CanvasContainer"></div>
 
+</div>
 </body>
 </html>
