@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, serif;
+}
+.fullContainer{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    vertical-align: middle;
+    justify-content: space-around;
+    background-color: RED;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.canvas-container{
+    background-color: RED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    align-self: center;
+}
+main{
+    display: flex;
+    flex-shrink: 1;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    padding: 10px;
+    margin: 0;
+}
+#rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+canvas {
+    display: flex;
+}
+
+#buttons {
+    padding: 20px;
+}
+a{
+    background-color: aliceblue;
+    text-decoration: none;
+
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
